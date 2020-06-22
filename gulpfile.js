@@ -70,7 +70,7 @@ const headerJS = [
     'node_modules/magnific-popup/dist/jquery.magnific-popup.min.js',
     'node_modules/selectize/dist/js/standalone/selectize.min.js',
     'node_modules/aos/dist/aos.js',
-    'node_modules/holderjs/holder.min.js',
+    //'node_modules/holderjs/holder.min.js',
     'src/js/modernizr.custom.js',
     'node_modules/owl.carousel/dist/owl.carousel.min.js'
 ];
