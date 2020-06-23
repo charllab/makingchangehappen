@@ -1,0 +1,95 @@
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// ++++++++++++++++++++++++++++++++++++++  Main Nav ++++++++++++++++++++++++++++++++++++++++++++++++
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+.main-nav {
+
+    .navbar {
+        padding-left: 0;
+        padding-right: 0;
+        border-bottom: 1px solid #ccc;
+    }
+
+    .navbar-dark .navbar-toggler {
+        background: $white;
+        outline: none;
+
+        .fa-bars {
+            color: $body-color;
+            font-size: 110%;
+            line-height: 1.2;
+        }
+    }
+
+    .nav-logo img {
+        width: 290px;
+        height: auto;
+    }
+
+    .navbar > .container {
+        padding: 0 1.25rem;
+    }
+
+    // style nav anchors
+    .navbar-nav .nav-link {
+        text-transform: capitalize;
+        font-family: $headings-font-family;
+        font-weight: 500;
+        color: $body-color;
+        padding: $spacer*.35 0;
+        font-size: 1.125rem;
+    }
+
+    // active link
+    .navbar-nav .menu-item.active > .nav-link {
+        color: $primary;
+        font-weight: 700;
+    }
+
+}
+
+// ************ main-nav lg-up only sizes styles ************ //
+
+@include media-breakpoint-up(lg) {
+
+    .main-nav {
+
+        // style nav anchors
+        .navbar-nav .nav-link {
+            padding: $spacer $spacer*.5;
+            font-size: 1rem;
+        }
+
+    }
+
+}
+
+
+// ************ main-nav md-down only sizes styles ************ //
+
+@include media-breakpoint-down(lg) {
+
+    .main-nav {
+
+        padding: 0;
+
+        .nav-logo img {
+            width: 190px;
+            height: auto;
+        }
+
+    }
+
+    // mobile menu container
+    .mainnav-m {
+        background-color: lighten($body-color,80%);
+        padding: $spacer*.325 $spacer*.65 $spacer*.65;
+    }
+
+}
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// +++++++++++++++++++++++++++++++++  Main Nav Frontpage +++++++++++++++++++++++++++++++++++++++++++
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+

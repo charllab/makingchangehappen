@@ -1,0 +1,18 @@
+body {
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    font-family: $font-family-sans-serif;
+    -webkit-overflow-scrolling: touch;
+    line-height: 1.4;
+    font-weight: 400;
+}
+
+ol li {
+    padding-bottom: 1.5rem;
+}
+
+ol li ul {
+    padding-left: 3rem;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}

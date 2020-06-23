@@ -1,0 +1,22 @@
+
+input.text, input.title, input[type=email], input[type=password], input[type=tel], input[type=text], select, textarea {
+    border: 1px solid $secondary;
+    &:focus {
+        border: 1px solid $primary;
+    }
+}
+
+input#gform_submit_button_1 {
+    background-color: transparent;
+    color: #1ccaad;
+    border-width: 3px;
+    border-color: #1ccaad;
+    border-style: solid;
+    border-radius: 3px;
+    letter-spacing: 1px;
+    font-size: 18px;
+    font-family: 'Lora',Georgia,"Times New Roman",serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 18px 40px;
+}
