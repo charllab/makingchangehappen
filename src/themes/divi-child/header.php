@@ -32,7 +32,7 @@
 
 <header class="main-nav">
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-light">
 
         <div class="container">
 
@@ -54,6 +54,10 @@
 
                     <?php wp_nav_menu([
                         'theme_location' => 'primary',
+                        'container_class' => 'collapse navbar-collapse',
+                        'container_id' => 'mainnav',
+                        'menu_class' => 'navbar-nav ml-auto',
+                        'menu_id' => 'desktop-menu',
                         'walker' => new understrap_WP_Bootstrap_Navwalker(),
                     ]); ?>
 
@@ -66,6 +70,11 @@
     <div class="mainnav-m collapse navbar-collapse d-lg-none">
         <?php wp_nav_menu([
             'theme_location' => 'primary',
+            'container_class' => 'container',
+            'container_id' => 'mainnav',
+            'menu_class' => 'navbar-nav ml-auto',
+            'fallback_cb' => '',
+            'menu_id' => 'mobile-menu',
             'walker' => new understrap_WP_Bootstrap_Navwalker(),
         ]); ?>
     </div>
