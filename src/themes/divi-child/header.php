@@ -21,7 +21,7 @@
     <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 
     <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&display=swap" rel="stylesheet">
-
+    <script src="https://kit.fontawesome.com/61d303198f.js" crossorigin="anonymous"></script>
     <script type="text/javascript">
         document.documentElement.className = 'js';
     </script>
@@ -30,15 +30,24 @@
 </head>
 <body <?php body_class(); ?>>
 
-<header class="main-nav">
+<header class="main-nav position-relative">
+
+    <div class="nav-logo logo-absolute d-lg-none">
+        <a href="<?php echo esc_url(home_url('/')); ?>">
+            <img src="<?php bloginfo('stylesheet_directory'); ?>/images/logo-horiz-longer.svg"
+                 alt="<?php bloginfo('name'); ?> - Logo"
+                 class="img-fluid logo-absolute">
+            <span class="sr-only"><?php bloginfo('name'); ?></span>
+        </a>
+    </div>
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-light">
 
         <div class="container">
 
-            <div class="nav-logo">
+            <div class="nav-logo logo-absolute d-none d-lg-block ">
                 <a href="<?php echo esc_url(home_url('/')); ?>">
-                    <img src="<?php bloginfo('stylesheet_directory'); ?>/images/logo.svg"
+                    <img src="<?php bloginfo('stylesheet_directory'); ?>/images/logo-vert.svg"
                          alt="<?php bloginfo('name'); ?> - Logo"
                          class="img-fluid">
                     <span class="sr-only"><?php bloginfo('name'); ?></span>
@@ -49,7 +58,7 @@
                 <i class="fas fa-bars"></i>
             </button>
 
-            <div class="d-lg-flex flex-lg-column d-none d-lg-block">
+            <div class="d-lg-flex flex-lg-column d-none d-lg-block w-100">
                 <div id="top-buttons" class="d-flex ml-auto justify-content-end align-items-center">
 
                     <?php wp_nav_menu([

@@ -7,15 +7,15 @@
     .navbar {
         padding-left: 0;
         padding-right: 0;
-        border-bottom: 1px solid #ccc;
+        border-bottom: 2px solid #e3e3e3;
     }
 
     .navbar-dark .navbar-toggler {
-        background: $white;
+        background: $secondary;
         outline: none;
 
         .fa-bars {
-            color: $body-color;
+            color: white;
             font-size: 110%;
             line-height: 1.2;
         }
@@ -32,17 +32,24 @@
 
     // style nav anchors
     .navbar-nav .nav-link {
-        text-transform: capitalize;
+        text-transform: uppercase;
         font-family: $headings-font-family;
         font-weight: 500;
-        color: $body-color;
+        color: $primary;
         padding: $spacer*.35 0;
-        font-size: 1.125rem;
+        font-size: 1rem;
+        letter-spacing: 1px;
+
+        &:hover,
+        &:focus,{
+            color: $primary;
+        }
+
     }
 
     // active link
     .navbar-nav .menu-item.active > .nav-link {
-        color: $primary;
+        color: darken($primary,.5);
         font-weight: 700;
     }
 
@@ -57,7 +64,7 @@
         // style nav anchors
         .navbar-nav .nav-link {
             padding: $spacer $spacer*.5;
-            font-size: 1rem;
+            font-size: 1.125rem;
         }
 
     }
@@ -82,8 +89,16 @@
 
     // mobile menu container
     .mainnav-m {
-        background-color: lighten($body-color,80%);
-        padding: $spacer*.325 $spacer*.65 $spacer*.65;
+        background-color: white;
+    }
+
+    #mobile-menu {
+        padding-top: $spacer*2;
+        padding-bottom: $spacer*2;
+        li {
+            border-left: 5px solid #f2f2f2;
+            padding-left: 1rem;
+        }
     }
 
 }
@@ -92,4 +107,17 @@
 // +++++++++++++++++++++++++++++++++  Main Nav Frontpage +++++++++++++++++++++++++++++++++++++++++++
 // +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
+.logo-absolute {
+    width: 200px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
 
+@include media-breakpoint-up(lg) {
+    .logo-absolute {
+        top: -14px;
+        width: 166px;
+    }
+}

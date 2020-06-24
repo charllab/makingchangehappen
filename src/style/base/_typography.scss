@@ -7,12 +7,25 @@ body {
     font-weight: 400;
 }
 
+ul {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    li {
+        margin-bottom: 0;
+    }
+}
+
 ol li {
-    padding-bottom: 1.5rem;
+    padding-bottom: .5rem !important;
 }
 
 ol li ul {
-    padding-left: 3rem;
+    padding-top: .5rem !important;
+    padding-left: 3rem !important;
     padding-bottom: 0;
     margin-bottom: 0;
+}
+
+#left-area ul, .comment-content ul, .entry-content ul, .et-l--body ul, .et-l--footer ul, .et-l--header ul, body.et-pb-preview #main-content .container ul {
+    padding-bottom: 0;
 }
