@@ -1,3 +1,16 @@
+// thank you message
+
+div#gform_confirmation_message_1 {
+    color: #2e4258;
+    font-size: 2rem;
+    font-family: 'Lora',Georgia,"Times New Roman",serif;
+    font-weight: 700;
+    padding: 10px;
+    border-radius: 12px;
+}
+
+
+
 //captcha mobile fix
 @media (max-width: 361.98px) {
     #gform_wrapper_1 div.ginput_recaptcha {
