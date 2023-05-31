@@ -1,4 +1,4 @@
-    <footer class="bg-white py-2 pb-lg-1">
+    <footer class="bg-white py-2 pb-lg-1 runcloud">
         <div class="container text-primary">
             <div class="row">
                 <div class="col-lg-6 text-center text-lg-left">
@@ -12,7 +12,7 @@
                             href="<?php echo esc_url(home_url('/')); ?>/privacy-policy" class="text-primary font-weight-bold">Privacy&nbsp;Policy</a>
                     </p>
                     <p class="mb-0">Designed, Developed and Hosted by <a href="https://sproing.ca" target="_blank"
-                                                                         class="text-primary font-weight-bold">Sproing&nbsp;Creative</a>
+                                                                         class="text-primary font-weight-bold">Sproing&nbsp;Creative.</a>
                     </p>
                 </div>
             </div>
